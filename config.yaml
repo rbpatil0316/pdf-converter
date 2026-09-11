@@ -1,0 +1,65 @@
+# Configuration file for PDF Converter
+
+# Default resolution setting
+default_resolution: standard
+
+# Target file size (in MB) - set to null for no limit
+target_file_size: null
+
+# Image compression settings
+compress_images: true
+image_quality: 85
+
+# DPI settings for different resolutions
+dpi_settings:
+  low: 72
+  standard: 150
+  high: 300
+
+# Quality settings for different resolutions
+quality_settings:
+  low:
+    quality_factor: 0.6
+    compress: true
+  standard:
+    quality_factor: 0.85
+    compress: false
+  high:
+    quality_factor: 1.0
+    compress: false
+
+# Supported input formats
+supported_formats:
+  documents:
+    - .docx
+    - .doc
+    - .odt
+    - .rtf
+  presentations:
+    - .pptx
+    - .ppt
+    - .odp
+  spreadsheets:
+    - .xlsx
+    - .xls
+    - .ods
+    - .csv
+  images:
+    - .jpg
+    - .jpeg
+    - .png
+    - .tiff
+    - .bmp
+    - .gif
+    - .webp
+
+# Conversion timeout (in seconds)
+conversion_timeout: 300
+
+# Temporary directory for intermediate files
+temp_directory: ./temp
+
+# Logging configuration
+logging:
+  level: INFO
+  file: ./pdf_converter.log
