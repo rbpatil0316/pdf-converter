@@ -1,0 +1,28 @@
+# Requirements for PDF Converter
+
+# Document processing
+python-pptx>=0.6.21          # PowerPoint/Presentation files
+python-docx>=0.8.11          # Word documents
+openpyxl>=3.8.1              # Excel files
+
+# Image processing
+Pillow>=9.0.0                # Image manipulation and PDF generation
+
+# PDF manipulation
+PyPDF2>=3.0.0                # PDF reading, writing, and compression
+reportlab>=3.6.0             # PDF generation from scratch
+
+# CLI
+click>=8.0.0                 # Command-line interface
+
+# Configuration
+PyYAML>=6.0                  # YAML configuration parsing
+
+# Progress tracking
+tqdm>=4.62.0                 # Progress bars
+
+# Development dependencies
+pytest>=7.0.0                # Testing framework
+pytest-cov>=3.0.0            # Code coverage
+black>=22.0.0                # Code formatting
+flake8>=4.0.0                # Linting
